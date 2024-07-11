@@ -7,3 +7,6 @@
 [submodule "django_template_limitless"]
 	path = django_template_limitless
 	url = https://bitbucket.org/dolphinitde/django-template-limitless
+[submodule "django_servicestack_backend"]
+	path = django_servicestack_backend
+	url = git@github.com:jcivitel/django-servicestack-backend.git
