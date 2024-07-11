@@ -2,6 +2,6 @@ asgiref==3.8.1
 Django==5.0.7
 django-dirtyfields==1.9.3
 django-parler==2.3
-pillow==10.3.0
+pillow==10.4.0
 sqlparse==0.5.0
 tzdata==2024.1
