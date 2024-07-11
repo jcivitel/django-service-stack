@@ -1,0 +1,6 @@
+[submodule "django_mdat_customer"]
+	path = django_mdat_customer
+	url = https://bitbucket.org/code-orange/django-mdat-customer
+[submodule "django_servicestack_board"]
+	path = django_servicestack_board
+	url = git@github.com:jcivitel/django-servicestack-board.git
