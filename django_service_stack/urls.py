@@ -14,9 +14,27 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
+import os
+
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+
+from django_service_stack import settings
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path("admin/", admin.site.urls),
 ]
+
+# List modules that should not auto-map path
+ignore_modules = ["django_servicestack_backend"]
+
+# Dynamic loading of Service Stack urls
+for name in os.listdir(settings.PROJECT_ROOT + "/.."):
+    if os.path.isdir(name) and name.startswith("django_servicestack_"):
+        if name in ignore_modules:
+            continue
+
+        module_name = name + "." + name
+        url_path = name.replace("django_servicestack_", "").replace("_", "-")
+        urlpatterns.append(path(url_path + "/", include(module_name + ".urls")))
