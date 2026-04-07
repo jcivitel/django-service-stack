@@ -11,4 +11,4 @@ pathspec==1.0.4
 pillow==12.2.0
 platformdirs==4.9.4
 sqlparse==0.5.5
-tzdata==2025.3
+tzdata==2026.1
