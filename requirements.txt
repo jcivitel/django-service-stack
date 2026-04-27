@@ -6,7 +6,7 @@ Django==6.0.4
 django-dirtyfields==1.9.9
 django-parler==2.3
 mypy-extensions==1.1.0
-packaging==26.1
+packaging==26.2
 pathspec==1.1.1
 pillow==12.2.0
 platformdirs==4.9.6
