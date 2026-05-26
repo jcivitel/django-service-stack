@@ -4,7 +4,7 @@ click==8.4.1
 colorama==0.4.6
 Django==6.0.5
 django-dirtyfields==1.9.9
-django-parler==2.3
+django-parler==2.4
 mypy-extensions==1.1.0
 packaging==26.2
 pathspec==1.1.1
